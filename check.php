@@ -79,7 +79,7 @@ if (strpos($response, '"error":')) {
 } elseif (strpos($response, '"status": "succeeded"')) {
     $receipt = json_decode($response, true)['receipt_url'];
     $receipt = '<a href="'.$receipt.'">Receipt</a>';
-    die('CVV - '.$cc.' - Approved - '.$receipt);
+    die('CVV - '.$cc.' - Approved - '.$receipt.'');
 }
 
 ?>
